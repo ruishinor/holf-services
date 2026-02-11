@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holf Services | Creative Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="fog-wrapper">
+        <div class="fog-layer fog-layer-1"></div>
+        <div class="fog-layer fog-layer-2"></div>
+    </div>
+
+    <div id="intro-overlay">
+        <h1 class="fade-in">“The Creative Services You Want”</h1>
+    </div>
+
+    <div id="app-container" class="hidden">
+        
+        <header>
+            <div class="logo" id="logo-btn" style="cursor: pointer;">HOLF SERVICES</div>
+            <nav>
+                <button class="nav-link active" data-target="about">About</button>
+                <button class="nav-link" data-target="services">Services</button>
+                <button class="nav-link" data-target="portfolio">Portfolio</button>
+                <button class="nav-link" data-target="contact">Contact</button>
+                <button class="nav-link" data-target="privacy">Privacy</button>
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">☀</button>
+            </nav>
+        </header>
+
+        <main id="content-area">
+            
+            <section id="about" class="page-section active-section">
+                <h2>About</h2>
+                <p class="lead">We provide the structure for chaos and the creativity for order.</p>
+                <p>Holf Services operates at the intersection of technology and storytelling. We don't just build; we craft environments.</p>
+            </section>
+
+            <section id="services" class="page-section">
+                <h2>Expertise</h2>
+                <p style="margin-bottom: 2rem; color: var(--accent-color);">Select a service to view related projects.</p>
+                <ul class="service-list">
+                    <li><button class="service-link" data-filter="web">Website Development</button></li>
+                    <li><button class="service-link" data-filter="story">Creative Storytelling</button></li>
+                    <li><button class="service-link" data-filter="brand">Brand Building</button></li>
+                    <li><button class="service-link" data-filter="product">Product Design</button></li>
+                    <li><button class="service-link" data-filter="resource">Digital Resources</button></li>
+                    <li><button class="service-link" data-filter="logistics">Event Logistics</button></li>
+                    <li><button class="service-link" data-filter="team">Team Building</button></li>
+                    <li><button class="service-link" data-filter="process">Process Development</button></li>
+                </ul>
+            </section>
+
+            <section id="portfolio" class="page-section">
+                <div class="portfolio-header">
+                    <h2>Portfolio</h2>
+                    <button id="reset-filter" style="display:none; margin-bottom: 1rem; background: transparent; border: 1px solid var(--text-color); color: var(--text-color); padding: 5px 10px; cursor: pointer;">Show All</button>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="web">
+                        <div class="img-box" style="background-image: url('https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=800&q=80')"></div>
+                        <span>Website Development</span>
+                    </div>
+                    <div class="gallery-item" data-category="story">
+                        <div class="img-box" style="background-image: url('https://images.unsplash.com/photo-1455849318743-b2233052fcff?auto=format&fit=crop&w=800&q=80')"></div>
+                        <span>Creative Storytelling</span>
+                    </div>
+                    <div class="gallery-item" data-category="brand">
+                        <div class="img-box" style="background-image: url('https://images.unsplash.com/photo-1434626881859-194d67b2b86f?auto=format&fit=crop&w=800&q=80')"></div>
+                        <span>Brand Building</span>
+                    </div>
+                    <div class="gallery-item" data-category="product">
+                        <div class="img-box" style="background-image: url('https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=800&q=80')"></div>
+                        <span>Product Design</span>
+                    </div>
+                    <div class="gallery-item" data-category="logistics">
+                        <div class="img-box" style="background-image: url('https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=800&q=80')"></div>
+                        <span>Event Logistics</span>
+                    </div>
+                    <div class="gallery-item" data-category="web">
+                        <div class="img-box" style="background-image: url('https://images.unsplash.com/photo-1481487484168-9b930d5b7960?auto=format&fit=crop&w=800&q=80')"></div>
+                        <span>Writing Articles</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="page-section">
+                <h2>Contact</h2>
+                <form class="minimal-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required placeholder=" ">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder=" ">
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Intent</label>
+                        <select id="type">
+                            <option value="collaborate">Collaborate</option>
+                            <option value="book">Book a Service</option>
+                            <option value="event">Join an Event</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Inquiry</button>
+                </form>
+            </section>
+
+            <section id="privacy" class="page-section">
+                <h2>Privacy Policy</h2>
+                <div class="policy-text">
+                    <p class="policy-date">Last Updated: February 2026</p>
+                    <p>Holf Services ("we," "us," or "our") respects your privacy and is committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website and tell you about your privacy rights and how the law protects you.</p>
+
+                <div class="policy-group">
+                    <h3>1. Data We Collect</h3>
+                    <p>We may collect, use, store and transfer different kinds of personal data about you which we have grouped together follows: Identity Data (first name, last name), Contact Data (email address, telephone number), and Technical Data (internet protocol (IP) address, browser type and version).</p>
+                    </div>
+
+                <div class="policy-group">
+                    <h3>2. How We Use Your Data</h3>
+                    <p>We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances: To process your service requests, to manage our relationship with you, and where it is necessary for our legitimate interests (or those of a third party) and your interests and fundamental rights do not override those interests.</p>
+                    </div>
+
+                <div class="policy-group">
+                    <h3>3. Data Security</h3>
+                    <p>We have put in place appropriate security measures to prevent your personal data from being accidentally lost, used or accessed in an unauthorized way, altered or disclosed.</p>
+                    </div>
+
+                <div class="policy-group">
+                    <h3>4. Your Rights (GDPR &amp; CCPA)</h3>
+                    <p>Under certain circumstances, you have rights under data protection laws in relation to your personal data, including the right to request access, correction, erasure, restriction, transfer, to object to processing, to portability of data, and (where the lawful ground of processing is consent) to withdraw consent.</p>
+                    </div>
+
+                <div class="policy-group">
+                    <h3>5. Contact</h3>
+                    <p>If you have any questions about this privacy policy or our privacy practices, please contact us via the form on the Contact page.</p>
+                    </div>
+                </div>
+            </section>            
+</main>
+        <footer>
+        <div class="footer-content">
+            <div class="footer-center">
+                <a href="#" class="nav-link-footer" data-target="about">About</a>
+                <a href="#" class="nav-link-footer" data-target="services">Services</a>
+                <a href="#" class="nav-link-footer" data-target="portfolio">Portfolio</a>
+                <a href="#" class="nav-link-footer" data-target="privacy">Privacy</a>
+            </div>
+            <div class="footer-center copyright-line">
+                <span>©</span> <span id="year"></span> <span>Holf Services | All Rights Reserved.</span>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
